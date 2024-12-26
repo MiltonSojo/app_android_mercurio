@@ -1,12 +1,10 @@
-import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, Button } from "react-native";
 
-export default function App() {
+export default function AboutPage({ navigation }) {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-      <Button title="Press me" onPress={() => alert("Button pressed")} />
+      <Text>Acerca de</Text>
+      <Button title="Volver" onPress={() => navigation.goBack()} />
     </View>
   );
 }
